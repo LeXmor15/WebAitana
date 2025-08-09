@@ -1,0 +1,285 @@
+---
+import LayoutBase from '../layouts/LayoutBase.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PackCard from '../components/PackCard.astro';
+---
+
+<LayoutBase 
+  title="Servicios - Aitana Escrivà Conde | Packs de Terapia EMDR, Ansiedad y Más"
+  description="Descubre mis packs de servicios: EMDR para trauma, gestión de ansiedad, autoestima, psicogerontología. Presencial en Castellón y terapia online."
+>
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 section-padding">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
+        Servicios de <span class="text-primary-600">Psicología</span>
+      </h1>
+      <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+        Packs especializados diseñados para acompañarte en tu proceso de bienestar emocional. 
+        Elige la modalidad que mejor se adapte a tus necesidades.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div class="flex items-center bg-white rounded-lg px-6 py-3 shadow-md">
+          <svg class="w-5 h-5 text-primary-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Presencial en Castellón</span>
+        </div>
+        
+        <div class="flex items-center bg-white rounded-lg px-6 py-3 shadow-md">
+          <svg class="w-5 h-5 text-accent-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Terapia Online</span>
+        </div>
+        
+        <div class="flex items-center bg-white rounded-lg px-6 py-3 shadow-md">
+          <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Plazas Limitadas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Packs de servicios -->
+  <section class="section-padding bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-4">
+          Packs Especializados
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+          Cada pack está diseñado específicamente para abordar tus necesidades. 
+          <strong class="text-primary-600">Solo quedan 3 plazas disponibles este mes.</strong>
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <PackCard 
+          title="Gestión de Ansiedad y Estrés"
+          description="Aprende técnicas efectivas para controlar la ansiedad y recuperar tu tranquilidad"
+          sessions={6}
+          price="420€"
+          popular={true}
+          features={[
+            "6 sesiones de 60 minutos",
+            "Técnicas de respiración y relajación",
+            "Reestructuración cognitiva",
+            "Herramientas para el día a día",
+            "Material de apoyo incluido",
+            "Seguimiento entre sesiones"
+          ]}
+        />
+        
+        <PackCard 
+          title="Técnicas EMDR para Trauma"
+          description="Especialización en terapia EMDR para superar experiencias traumáticas"
+          sessions={4}
+          price="320€"
+          badge="Especialista"
+          features={[
+            "4 sesiones de 90 minutos",
+            "Evaluación completa inicial",
+            "Protocolo EMDR certificado",
+            "Técnicas de estabilización",
+            "Plan personalizado de trabajo",
+            "Informe final del proceso"
+          ]}
+        />
+        
+        <PackCard 
+          title="Autoestima y Confianza"
+          description="Fortalece tu amor propio y desarrolla una relación saludable contigo mismo"
+          sessions={5}
+          price="350€"
+          features={[
+            "5 sesiones de 60 minutos",
+            "Trabajo con creencias limitantes",
+            "Ejercicios de autocompasión",
+            "Técnicas de asertividad",
+            "Cuaderno de trabajo personal",
+            "Audio de relajación personalizado"
+          ]}
+        />
+        
+        <PackCard 
+          title="Superación de Duelo"
+          description="Acompañamiento especializado en procesos de pérdida y duelo"
+          sessions={5}
+          price="350€"
+          features={[
+            "5 sesiones de 60 minutos",
+            "Apoyo emocional especializado",
+            "Técnicas de afrontamiento",
+            "Ritual de despedida personalizado",
+            "Red de apoyo y recursos",
+            "Disponibilidad urgente 24/7"
+          ]}
+        />
+        
+        <PackCard 
+          title="Psicogerontología"
+          description="Apoyo especializado para personas mayores y sus familias"
+          sessions={6}
+          price="390€"
+          features={[
+            "6 sesiones de 45 minutos",
+            "Adaptación al envejecimiento",
+            "Estimulación cognitiva",
+            "Apoyo a la familia",
+            "Estrategias de comunicación",
+            "Visitas domiciliarias disponibles"
+          ]}
+        />
+        
+        <PackCard 
+          title="Bienestar Integral"
+          description="Psicología + coaching para un cambio completo en tu vida"
+          sessions={8}
+          price="560€"
+          badge="Completo"
+          features={[
+            "8 sesiones de 75 minutos",
+            "Enfoque psicológico + coaching",
+            "Plan de bienestar personalizado",
+            "Técnicas de mindfulness",
+            "Objetivos de crecimiento personal",
+            "Seguimiento 3 meses incluido"
+          ]}
+        />
+      </div>
+      
+      <div class="text-center mt-16">
+        <div class="bg-red-50 border border-red-200 rounded-lg p-6 max-w-2xl mx-auto mb-8">
+          <div class="flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-red-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="font-semibold text-red-700">Oferta Limitada</span>
+          </div>
+          <p class="text-red-700 mb-2">
+            <strong>Solo quedan 3 plazas disponibles</strong> para nuevos pacientes este mes.
+          </p>
+          <p class="text-red-600 text-sm">
+            Primera consulta con <strong>20% descuento</strong> - Solo hasta fin de mes
+          </p>
+        </div>
+        
+        <a 
+          href="https://wa.me/34691804629?text=Hola%20Aitana,%20me%20interesa%20reservar%20una%20de%20las%20plazas%20limitadas"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary text-lg px-8 py-4"
+        >
+          Reservar Mi Plaza Ahora
+        </a>
+        
+        <p class="text-neutral-600 mt-4 text-sm">
+          💬 Respuesta inmediata por WhatsApp | 📞 691 804 629
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modalidades de trabajo -->
+  <section class="section-padding bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-4">
+          Modalidades de Trabajo
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+          Elige la modalidad que mejor se adapte a tu estilo de vida y preferencias
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div class="card text-center">
+          <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-neutral-800 mb-4">Consulta Presencial</h3>
+          <p class="text-neutral-600 mb-6">
+            En mi consulta privada en Castellón de la Plana. Un espacio cálido y acogedor 
+            diseñado para tu comodidad y tranquilidad.
+          </p>
+          <ul class="text-left space-y-2 mb-6">
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Ambiente profesional y acogedor
+            </li>
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Conexión directa y personal
+            </li>
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Facilidades de aparcamiento
+            </li>
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Horarios flexibles
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card text-center">
+          <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-neutral-800 mb-4">Terapia Online</h3>
+          <p class="text-neutral-600 mb-6">
+            Sesiones por videollamada desde la comodidad de tu hogar. 
+            La misma calidad profesional con mayor flexibilidad.
+          </p>
+          <ul class="text-left space-y-2 mb-6">
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Comodidad de tu hogar
+            </li>
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Ahorro de tiempo y desplazamiento
+            </li>
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Mayor flexibilidad horaria
+            </li>
+            <li class="flex items-center text-neutral-700">
+              <svg class="w-4 h-4 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Plataforma segura y privada
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</LayoutBase>

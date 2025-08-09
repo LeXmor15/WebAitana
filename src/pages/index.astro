@@ -1,11 +1,162 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LayoutBase from '../layouts/LayoutBase.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<LayoutBase 
+  title="Aitana Escrivà Conde - Psicóloga en Castellón | Terapia EMDR y Apoyo Psicológico"
+  description="Psicóloga General Sanitaria en Castellón especializada en EMDR, trauma, ansiedad y problemas de pareja. Terapia presencial y online. ¡Contacta ahora!"
+>
+  <Header />
+  <Hero />
+  
+  <!-- Sección de servicios destacados -->
+  <section class="section-padding bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-4">
+          ¿En qué puedo ayudarte?
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+          Ofrezco un enfoque personalizado y evidence-based para tu bienestar emocional
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Ansiedad y Estrés</h3>
+          <p class="text-neutral-600">Técnicas efectivas para gestionar la ansiedad y recuperar tu tranquilidad</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Trauma y EMDR</h3>
+          <p class="text-neutral-600">Especialista en terapia EMDR para superar experiencias traumáticas</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Autoestima</h3>
+          <p class="text-neutral-600">Fortalece tu confianza y desarrolla una imagen positiva de ti mismo</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="/servicios" class="btn-primary">
+          Ver Todos los Servicios
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección por qué elegirme -->
+  <section class="section-padding bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
+            ¿Por qué elegir mi consulta?
+          </h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-2">Enfoque Personalizado</h3>
+                <p class="text-neutral-600">Cada persona es única. Adapto mi método terapéutico a tus necesidades específicas.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-2">Flexibilidad Total</h3>
+                <p class="text-neutral-600">Sesiones presenciales en mi consulta o terapia online desde la comodidad de tu hogar.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-2">Especialización Avanzada</h3>
+                <p class="text-neutral-600">Formación especializada en EMDR, trastorno límite de la personalidad, problemas de pareja y técnicas de última generación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <img 
+            src="/images/aitana-consulta.jpg" 
+            alt="Consulta de psicología de Aitana Escrivà Conde" 
+            class="rounded-2xl shadow-xl w-full h-96 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA final -->
+  <section class="section-padding bg-primary-600">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+        ¿Listo para dar el primer paso?
+      </h2>
+      <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+        No esperes más para cuidar tu bienestar emocional. 
+        Te acompaño en tu proceso de cambio con profesionalidad y calidez humana.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://wa.me/34691804629?text=Hola%20Aitana,%20me%20gustaría%20reservar%20una%20primera%20consulta"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-white text-primary-600 hover:bg-neutral-100 font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg"
+        >
+          Reservar Primera Consulta
+        </a>
+        <a 
+          href="/contacto" 
+          class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
+        >
+          Más Información
+        </a>
+      </div>
+      
+      <div class="mt-8 text-primary-100">
+        <p class="text-sm">📞 691 804 629 | ✉️ aitanaescriva@gmail.com</p>
+        <p class="text-xs mt-2">Plazas limitadas</p>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</LayoutBase>

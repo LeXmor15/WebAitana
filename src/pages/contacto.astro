@@ -1,0 +1,271 @@
+---
+import LayoutBase from '../layouts/LayoutBase.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormContacto from '../components/FormContacto.astro';
+---
+
+<LayoutBase 
+  title="Contacto - Aitana Escrivà Conde | Reserva Tu Cita de Psicología en Castellón"
+  description="Ponte en contacto conmigo para reservar tu cita. WhatsApp 691 804 629, email aitanaescriva@gmail.com. Consulta presencial y terapia online."
+>
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-primary-50 to-accent-50 section-padding">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
+        Hablemos de Tu <span class="text-primary-600">Bienestar</span>
+      </h1>
+      <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+        Estoy aquí para acompañarte en tu proceso de crecimiento personal. 
+        Elige la forma que prefieras para ponerte en contacto conmigo.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://wa.me/34691804629?text=Hola%20Aitana,%20me%20gustaría%20reservar%20una%20cita"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary text-lg px-8 py-4"
+        >
+          💬 WhatsApp Directo
+        </a>
+        <a href="tel:+34691804629" class="btn-secondary text-lg px-8 py-4">
+          📞 Llamar Ahora
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Información de contacto y formulario -->
+  <section class="section-padding bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Información de contacto -->
+        <div>
+          <h2 class="text-3xl font-bold text-neutral-800 mb-8">
+            Información de Contacto
+          </h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-1">WhatsApp (Recomendado)</h3>
+                <p class="text-neutral-600 mb-2">Respuesta inmediata, cualquier día de la semana</p>
+                <a 
+                  href="https://wa.me/34691804629"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-primary-600 font-semibold hover:text-primary-700"
+                >
+                  +34 691 804 629
+                </a>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-1">Teléfono</h3>
+                <p class="text-neutral-600 mb-2">Lunes a viernes de 9:00 a 20:00h</p>
+                <a href="tel:+34691804629" class="text-primary-600 font-semibold hover:text-primary-700">
+                  +34 691 804 629
+                </a>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-1">Email</h3>
+                <p class="text-neutral-600 mb-2">Respuesta en menos de 24 horas</p>
+                <a href="mailto:aitanaescriva@gmail.com" class="text-primary-600 font-semibold hover:text-primary-700">
+                  aitanaescriva@gmail.com
+                </a>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-neutral-800 mb-1">Consulta Presencial</h3>
+                <p class="text-neutral-600 mb-2">Cita previa</p>
+                <p class="text-primary-600 font-semibold">
+                  Castellón de la Plana, Valencia<br>
+                  <span class="text-sm text-neutral-500">(Dirección exacta al confirmar cita)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Horarios -->
+          <div class="mt-8 p-6 bg-neutral-50 rounded-lg">
+            <h3 class="font-semibold text-neutral-800 mb-4">Horarios de Atención</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-neutral-600">Lunes - Viernes</span>
+                <span class="font-medium">9:00 - 20:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-neutral-600">Sábados</span>
+                <span class="font-medium">10:00 - 14:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-neutral-600">Domingos</span>
+                <span class="font-medium">Solo urgencias</span>
+              </div>
+            </div>
+            <p class="text-xs text-neutral-500 mt-4">
+              * Horarios flexibles disponibles para terapia online
+            </p>
+          </div>
+        </div>
+        
+        <!-- Formulario de contacto -->
+        <div>
+          <h2 class="text-3xl font-bold text-neutral-800 mb-8">
+            Envíame un Mensaje
+          </h2>
+          <FormContacto />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Mapa y ubicación -->
+  <section class="section-padding bg-neutral-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-800 mb-4">
+          Mi Consulta en Castellón
+        </h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+          Un espacio acogedor y profesional diseñado para tu comodidad y tranquilidad
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div>
+          <img 
+            src="/images/castellon-map.jpg" 
+            alt="Mapa de Castellón de la Plana" 
+            class="rounded-lg shadow-lg w-full h-64 object-cover mb-6"
+          />
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 text-primary-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Fácil acceso en transporte público</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 text-primary-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Zona con facilidades de aparcamiento</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 text-primary-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Consulta privada y confidencial</span>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 text-primary-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Ambiente relajante y acogedor</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h3 class="text-xl font-bold text-neutral-800 mb-4">¿Cómo Llegar?</h3>
+          <p class="text-neutral-600 mb-6">
+            Mi consulta está ubicada en una zona céntrica de Castellón de la Plana, 
+            con fácil acceso tanto en vehículo privado como en transporte público.
+          </p>
+          
+          <div class="space-y-4 mb-6">
+            <div>
+              <h4 class="font-semibold text-neutral-800 mb-2">🚗 En Coche</h4>
+              <p class="text-neutral-600 text-sm">Múltiples opciones de aparcamiento gratuito en las calles cercanas y parking público a 2 minutos.</p>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-neutral-800 mb-2">🚌 Transporte Público</h4>
+              <p class="text-neutral-600 text-sm">Paradas de autobús urbano a menos de 5 minutos caminando. Líneas 1, 3 y 7.</p>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-neutral-800 mb-2">🚶‍♀️ A Pie</h4>
+              <p class="text-neutral-600 text-sm">Zona céntrica, accesible caminando desde cualquier punto del centro de Castellón.</p>
+            </div>
+          </div>
+          
+          <p class="text-sm text-neutral-500 bg-neutral-50 p-3 rounded-lg">
+            💡 <strong>Tip:</strong> Te enviaré la dirección exacta y las mejores rutas al confirmar tu cita. 
+            También disponible terapia online si prefieres mayor comodidad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA urgencias -->
+  <section class="section-padding bg-red-600">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+        ¿Necesitas Apoyo Urgente?
+      </h2>
+      <p class="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+        Si estás pasando por una crisis emocional o necesitas hablar con alguien de forma inmediata, 
+        no dudes en contactarme. Tu bienestar es mi prioridad.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <a 
+          href="https://wa.me/34691804629?text=URGENTE:%20Necesito%20ayuda%20psicológica%20inmediata"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-white text-red-600 hover:bg-red-50 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 shadow-lg text-lg"
+        >
+          🚨 WhatsApp Urgente
+        </a>
+        <a 
+          href="tel:+34691804629" 
+          class="border-2 border-white text-white hover:bg-white hover:text-red-600 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
+        >
+          📞 Llamar Ahora
+        </a>
+      </div>
+      
+      <div class="text-red-100 text-sm">
+        <p><strong>Disponibilidad de urgencias:</strong> 24/7 por WhatsApp | Llamadas hasta las 22:00h</p>
+        <p class="mt-2">Si es una emergencia vital, llama al <strong>112</strong> o acude a urgencias</p>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</LayoutBase>
